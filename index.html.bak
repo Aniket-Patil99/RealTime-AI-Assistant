@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP Chatbot</title>
+<style>
+body{font-family:Arial}
+#chat{width:400px;margin:auto}
+#messages{border:1px solid #ccc;height:300px;overflow:auto;padding:10px}
+</style>
+</head>
+
+<body>
+
+<div id="chat">
+<h2>Chatbot</h2>
+
+<div id="messages"></div>
+
+<input type="text" id="msg" placeholder="Type message">
+<button onclick="sendMsg()">Send</button>
+</div>
+
+<script>
+
+function sendMsg(){
+
+let msg = document.getElementById("msg").value;
+
+fetch("chatbot.php",{
+method:"POST",
+headers:{
+"Content-Type":"application/x-www-form-urlencoded"
+},
+body:"message="+encodeURIComponent(msg)
+})
+.then(res=>res.text())
+.then(data=>{
+
+document.getElementById("messages").innerHTML += "<p><b>You:</b> "+msg+"</p>";
+document.getElementById("messages").innerHTML += "<p><b>Anvi:</b> "+data+"</p>";
+
+document.getElementById("msg").value="";
+
+});
+
+}
+
+</script>
+
+</body>
+</html>

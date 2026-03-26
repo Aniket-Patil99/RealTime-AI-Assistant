@@ -1,0 +1,10 @@
+D:\xampp\htdocs\chat_bot\chatbot.php
+D:\xampp\htdocs\chat_bot\dashboard.html.bak
+D:\xampp\htdocs\chat_bot\database.sqlite
+D:\xampp\htdocs\chat_bot\db.php
+D:\xampp\htdocs\chat_bot\file_list.txt
+D:\xampp\htdocs\chat_bot\html_files.txt
+D:\xampp\htdocs\chat_bot\index.html.bak
+D:\xampp\htdocs\chat_bot\index.php
+D:\xampp\htdocs\chat_bot\list.txt
+D:\xampp\htdocs\chat_bot\php_files.txt

@@ -1,0 +1,3 @@
+D:\xampp\htdocs\chat_bot\chatbot.php
+D:\xampp\htdocs\chat_bot\db.php
+D:\xampp\htdocs\chat_bot\index.php
