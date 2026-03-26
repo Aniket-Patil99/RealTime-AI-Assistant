@@ -11,8 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $pdo->prepare("INSERT INTO messages (session_id, sender, content) VALUES (?, 'user', ?)");
     $stmt->execute([$session_id, $message]);
 
-    $api_key = "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";
-    $api_url = "https://integrate.api.nvidia.com/v1/chat/completions";
+    $api_key = "your key";
+    $api_url = "your url";
 
     $data = [
         "model" => "meta/llama3-8b-instruct",
